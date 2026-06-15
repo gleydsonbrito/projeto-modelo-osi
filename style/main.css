@@ -43,6 +43,46 @@
   border-radius: 0.5rem;
 }
 
+.email-form {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.label-remetente-form  {
+  color: blue;
+  background-color: #FFF;
+  width: fit-content;
+  padding: 0 0.2rem;
+  font-size: 0.8rem;
+  margin-bottom: -1rem;
+  margin-left: 0.2rem;
+  z-index: 2;
+  transition: 0.5s;
+  outline: 1px solid transparent;
+}
+
+.input-remetente-form {
+  width: 15%;
+  margin-bottom: 1rem;
+  transition: 0.5s;
+  outline: 1px solid transparent;
+}
+
+.remetente-btn {
+  width: fit-content;
+}
+
+.input-remetente-form:focus {
+  outline: 1px solid red;
+  border-radius: 0.1rem;
+}
+
+.email-form:has(.input-remetente-form:focus) .label-remetente-form {
+  margin-bottom: -.4rem;
+  outline: 1px solid transparent;
+}
+
 
 
 
